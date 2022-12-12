@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Development</title>
+        <link rel="stylesheet" href="dev_portfolio.css" /> 
+    </head>
+
+    <body>
+        <div class="top"> 
+            <button class="back-button" onclick="history.back()">Go Back</button>
+            <h1>Development</h1>
+        </div>
+
+        <div>
+            <p>In this assignment, students were tasked with developing an interactive webpage in React, using interface components and tying the components to an internal data state.
+                There were loose requirements regarding design choices and themes, but the functionality had to consist of:
+                <ul>
+                    <li>At least two filtering categories</li>
+                    <li>At least one sorting feature</li>
+                    <li>An aggregator section displaying:</li>
+                        <ul>
+                            <li>Items added to the aggregator</li>
+                            <li>Aggregation of a property</li>
+                        </ul> 
+                    <li>At least 12 item cards, each displaying:</li>
+                        <ul>
+                            <li>Item image</li>
+                            <li>Categories that the filter uses</li>
+                            <li>Field(s) that sort uses</li>
+                            <li>Property to aggregate</li>
+                            <li>A button that adds and removes from the aggregator</li>
+                        </ul> 
+                </ul>
+            </p>
+            <p>The application should also be able to handle any combination of filters, and all filters and sorting features should work together.</p>
+        </div>
+
+        <h1 style="padding-top:2rem;">Part 1: Brainstorming</h1>
+        <div class="parts-div">
+            <div>
+                <p>I began this project by first brainstorming ideas for a theme or topic. Because I enjoy traveling and exploring new places, I decided to
+                    make a travel planner application. The goal of the application is ease the stress that may come with planning a trip. The process of 
+                    comparing prices, finding deals, and calculating best value destinations can be a struggle so this application aims to help users make simpler decisions.
+                </p>
+
+                <p>Each item in my application will be displayed as travel destination. Each travel destination will have a property for <b>name, package, price, people, contient,</b> and <b>image</b>.</p>
+
+                <p>My travel planner application will have the following features:</p>
+                <ul>
+                    <li><b>Sort By:</b></li>
+                        <ul>
+                            <li>Price</li>
+                            <li>Number of guests that can be accomodated</li>
+                        </ul>
+                    <li><b>Filter By:</b></li>
+                        <ul>
+                            <li>Region (Europe, Asia, South America, North America)</li>
+                            <li>Package deals (All-Inclusive, Tours and Activities Bundle, Timeshare Promotion)</li>
+                        </ul>
+                    <li><b>Total (Wishlist):</b></li>
+                        <ul>
+                            <li>Add to wishlist</li>
+                            <li>Remove from wishlist</li>
+                            <li>A display of the total price of all the destinations in the wishlist</li>
+                        </ul>
+                </ul>
+            </div>
+        </div>
+
+        <h1 style="padding-top:2rem;">Part 2: Coding in React</h1>
+        <div class="parts-div">
+            <div>
+                <p>After coming up with a thorough basis for my application, I began coding it in React. As I was coding the application, I had to consider usabiity principles,
+                    and the organization of components to allow for smooth user experience. 
+                </p>
+
+                <h2>Learnability</h2>
+                <p>To address learnability, I decided to present the sorting and filtering features as radio buttons so that users could clearly see the options that they can choose from. I also decided to include 
+                    a reset button instead of allowing users to click and unclick the radio buttons to go back to reset the items because I thought it would showcase the reset feature more clearly. 
+                    The add and remove buttons are separated for a similar reason, so that users can clearly differentiate between the two.
+                </p>
+
+                <h2>Memorability</h2>
+                <p>There are no intermediary steps that users have to remember in order to achieve the effect they want, making memorability very easy. If I had chosen to include dropdown menus instead of radio buttons, I think it would've been 
+                    more confusing to see what filtering/sorting types align with what heading (the text that displays over the collapsed dropdown menu). Onces users know what each button does, it's easy to remember 
+                    the functionality.
+                </p>
+
+                <h2>Efficiency</h2>
+                <p>Similar to above, since there are no intermediary steps that users have to take and all buttons are clearly outlined in the UI for users to use directly, the website should be intuitive to use. 
+                </p>
+                
+                <h3>Click on the image below to see the final application:</h3>
+                <a href="https://crazycheetah1317.github.io/development/">
+                    <img style="width: 55rem; height: 30rem; display: block; margin: 0 auto; border-radius: 12px; padding-bottom: 2rem;" src ="development.png">
+                </a>
+                
+            </div>
+
+        </div>
+
+        <h1 style="padding-top:2rem;">Part 3: Conclusion and Takeaways</h1>
+        <div class="parts-div">
+            <div>
+                <p>This was the first project I had ever coded in React for so it was a very experimental journey. In the beginning I encountered conceptual difficulties, but as 
+                    I made mistakes along the way I also learned more about how this Javascript library works. Through trial and error, I learned:
+                    <ul>
+                        <li>The relationship between props, components, and state</li>
+                        <li>How state updates with user interaction</li>
+                        <li>How to call and render an API</li>
+                        
+                    </ul>
+                </p>
+                <p>After completing this project, I feel as though I have a proficient grasp on the fundamentals of React. Prior to this, I had never been able to make 
+                    webpages interactive, only responsive, so it was cool to be able to work with an internal data source and extract information in various ways. I'm interested
+                    to learn more about web servers and API requests as I continue to grow as a developer.
+                </p>
+            </div>
+        </div>
+
+    </body>
+
+</html>
